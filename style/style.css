@@ -435,6 +435,10 @@ body {
     p {
         font-size: 13px;
     }
+
+    ul, ol {
+        font-size: 13px;
+    }
     
     .home-bar {
         padding: 100px 0px 30px 30px;
