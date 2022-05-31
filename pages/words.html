@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link id="style" rel="stylesheet" href="../style/style.css">
+        <title>words | octopusfiles</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+
+        <meta name="author" content="ad&#10074;tya sar&#10074;n">
+        <meta name="description" content="hyper-text for all my needs">
+        <meta property="og:image" content="logo.png">
+        <meta property="og:description" content="hyper-text for all my needs">
+        <meta property="og:title" content="octopusfiles">
+        <meta name="twitter:title" content="octopusfiles">
+
+    </head>
+
+
+    <body>
+        
+        <!--Nav Bar-->
+
+        <div class="nav-bar" id="nav-bar">
+
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../assets/logo.png" alt="octopusfiles"></a>
+            </div>
+
+            <div class="title-text">
+                <h2><span class="octopus">octopus</span>files<span class="blink2">_</span></h2>
+            </div>
+
+            <i class="open-menu" onclick="showMenu()">menu</i>
+
+        </div>
+
+        <div class="nav-links" id="nav-links">
+
+            <i class="close-menu" onclick="closeMenu()">close</i>
+
+            <ul>
+                <li><a href="words.html">words</a></li>
+                <li><a href="images.html">images</a></li>
+                <li><a href="work.html">work</a></li>
+                <li><a href="about.html">about</a></li>
+                <!-- <li><a href="https://twitter.com/octopusfiles" target="_blank" rel="noopener noreferrer">contact&#8663;</a></li> -->
+            </ul>
+
+        </div>
+
+        <!--Body-->
+
+        <div class="content">
+
+            <h1>
+                archive
+            </h1>
+
+            <p><strong>permalink</strong>: <a href="reading-list.html">reading list</a></p>
+        
+            <ul>
+                <li>29.03.2022 | <a href="sample.html">unnecessarily long title so that it takes up more than one line</a> | sample</li>
+            </ul>
+
+            <br /><br />
+
+        </div>
+
+        <!--Footer-->
+
+        <div class="footer">
+
+            <p>octopusfiles</p>
+
+        </div>
+
+        <!--Menu Open/Close-->
+
+        <script>
+
+            var show = document.getElementById("nav-links");
+
+            function showMenu(){
+
+                show.style.right = "0";
+
+            }
+
+            function closeMenu(){
+
+                show.style.right = "-150px";
+
+            }
+
+        </script>
+
+    </body>
+
+</html>

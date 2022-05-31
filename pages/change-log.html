@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link id="style" rel="stylesheet" href="../style/style.css">
+        <title>change-log | octopusfiles</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+
+        <meta name="author" content="ad&#10074;tya sar&#10074;n">
+        <meta name="description" content="hyper-text for all my needs">
+        <meta property="og:image" content="logo.png">
+        <meta property="og:description" content="hyper-text for all my needs">
+        <meta property="og:title" content="octopusfiles">
+        <meta name="twitter:title" content="octopusfiles">
+
+    </head>
+
+
+    <body>
+        
+        <!--Nav Bar-->
+
+        <div class="nav-bar" id="nav-bar">
+
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../assets/logo.png" alt="octopusfiles"></a>
+            </div>
+
+            <div class="title-text">
+                <h2><span class="octopus">octopus</span>files<span class="blink2">_</span></h2>
+            </div>
+
+            <i class="open-menu" onclick="showMenu()">menu</i>
+
+        </div>
+
+        <div class="nav-links" id="nav-links">
+
+            <i class="close-menu" onclick="closeMenu()">close</i>
+
+            <ul>
+                <li><a href="words.html">words</a></li>
+                <li><a href="images.html">images</a></li>
+                <li><a href="work.html">work</a></li>
+                <li><a href="about.html">about</a></li>
+                <!-- <li><a href="https://twitter.com/octopusfiles" target="_blank" rel="noopener noreferrer">contact&#8663;</a></li> -->
+            </ul>
+
+        </div>
+
+        <!--Body-->
+
+        <div class="content">
+
+            <h1>
+                change-log
+            </h1>
+
+            <p><strong>permalink</strong>: <a href="https://github.com/octopusfiles/octopusfiles.github.io" target="_blank" rel="noopener noreferrer">current files&#8663;</a></p>
+
+            <h2>to do</h2>
+
+            <ul>
+                <li>Add images section.</li>
+                <li>Add [secrets].</li>
+                <li>Finish commenting HTML and CSS.</li>
+                <li><del>Figure out what to with [today].</del></li>
+            </ul>
+            
+            <h2>26.05.2022</h2>
+
+            <ul>
+                <li>Added progress bars to articles.</li>
+                <li>Created [images] and [work] pages.</li>
+                <li>Changed element widths site-wise.</li>
+                <li>Adjusted element placing and spacing on [home].</li>
+                <li>Fixed js modal on [home].</li>
+                <li>Implemented typewriter.</li>
+                <li>Deleted [today]. Not sure what the point of it was.</li>
+            </ul>
+
+            <h2>24.05.2022</h2>
+
+            <ul>
+                <li>Added [site map].</li>
+                <li>Re-designed header.</li>
+                <li>Removed permalink unicode. Added external link unicode.</li>
+                <li>Added [today] pop-up.</li>
+            </ul>
+
+            <h2>23.05.2022</h2>
+
+            <ul>
+                <li>Added [navigation] element to [reading list].</li>
+                <li>Implemented semantic sidenotes (I think).</li>
+                <li>Fixed permalink on this page.</li>
+            </ul>
+
+            <h2>22.05.2022</h2>
+
+            <ul>
+                <li>Mobile-view constructed at max-width 999px.</li>
+                <li>Added [reading list] and [change-log].</li>
+                <li>Completed lazy (non-semantic) sidenote implementation.</li>
+            </ul>
+
+
+            <h2>21.05.2022</h2>
+
+            <ul>
+                <li>Rebuilt entirely with cleaner HTML and CSS.</li>
+                <li>Implemented CSS animations for home page and title.</li>
+                <li>Added lazy (non-semantic) sidenotes.</li>
+            </ul>
+
+            <br /><br />
+
+        </div>
+
+        <!--Footer-->
+
+        <div class="footer">
+
+            <p>last edit: 26.05.2022</p>
+
+        </div>
+
+        <!--Menu Open/Close-->
+
+        <script>
+
+            var show = document.getElementById("nav-links");
+
+            function showMenu(){
+
+                show.style.right = "0";
+
+            }
+
+            function closeMenu(){
+
+                show.style.right = "-150px";
+
+            }
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link id="style" rel="stylesheet" href="../style/style.css">
+        <title>reading list | octopusfiles</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+
+        <meta name="author" content="ad&#10074;tya sar&#10074;n">
+        <meta name="description" content="hyper-text for all my needs">
+        <meta property="og:image" content="logo.png">
+        <meta property="og:description" content="hyper-text for all my needs">
+        <meta property="og:title" content="octopusfiles">
+        <meta name="twitter:title" content="octopusfiles">
+
+    </head>
+
+
+    <body>
+        
+        <!--Nav Bar-->
+
+        <div class="nav-bar" id="nav-bar">
+
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../assets/logo.png" alt="octopusfiles"></a>
+            </div>
+
+            <div class="title-text">
+                <h2><span class="octopus">octopus</span>files<span class="blink2">_</span></h2>
+            </div>
+
+            <i class="open-menu" onclick="showMenu()">menu</i>
+
+        </div>
+
+        <div class="nav-links" id="nav-links">
+
+            <i class="close-menu" onclick="closeMenu()">close</i>
+
+            <ul>
+                <li><a href="words.html">words</a></li>
+                <li><a href="images.html">images</a></li>
+                <li><a href="work.html">work</a></li>
+                <li><a href="about.html">about</a></li>
+                <!-- <li><a href="https://twitter.com/octopusfiles" target="_blank" rel="noopener noreferrer">contact&#8663;</a></li> -->
+            </ul>
+
+        </div>
+
+        <!--Body-->
+
+        <div class="content">
+
+            <div class="toc">
+                <p>navigation</p>
+                <ul>
+                    <li><a href="#reading-list">reading list</a></li>
+                    <li><a href="#books">books</a>
+                        <ul>
+                            <li><a href="#books-may">may 2022</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#articles">articles</a>
+                        <ul>
+                            <li><a href="#articles-may">may 2022</a></li>
+                        </ul>
+                </ul>
+    
+            </div>
+
+            <h1 id="reading-list">
+                reading list
+            </h1>
+
+            <p><strong>currently reading</strong>: </p>
+
+            <h2 id="books">books</h2>
+
+            <h3 id="books-may">may 2022</h3>
+
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <h2 id="articles">articles</h2>
+
+            <h3 id="articles-may">may 2022</h3>
+
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+
+
+            
+
+            <br /><br />
+
+        </div>
+
+        <!--Footer-->
+
+        <div class="footer">
+
+            <p>last edit: 23.05.2022</p>
+
+        </div>
+
+        <!--Menu Open/Close-->
+
+        <script>
+
+            var show = document.getElementById("nav-links");
+
+            function showMenu(){
+
+                show.style.right = "0";
+
+            }
+
+            function closeMenu(){
+
+                show.style.right = "-150px";
+
+            }
+
+        </script>
+
+    </body>
+
+</html>
