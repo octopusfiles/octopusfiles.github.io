@@ -167,30 +167,66 @@ body {
     position: absolute;
     left: -99999px;
     top: auto;
-  }
+}
 
-   /* Style the header: fixed position (always stay at the top) */
+/* Style the header: fixed position (always stay at the top) */
 .header {
     position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
     background-color: whitesmoke;
-  }
+}
   
-  /* The progress container (grey background) */
-  .progress-container {
+/* The progress container (grey background) */
+.progress-container {
     width: 100%;
     height: 4px;
     background: #ccc;
   }
   
-  /* The progress bar (scroll indicator) */
+/* The progress bar (scroll indicator) */
   .progress-bar {
     height: 4px;
     background: darkred;
     width: 0%;
-  } 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin: 0px 0px 10px 0px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    text-align: justify;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 10%;
+    left:10%;
+}
+
+.centered p {
+    font-size: 20px;
+    padding: 5px;
+}
 
 @media screen and (min-width:1000px)  {
 
@@ -416,7 +452,7 @@ body {
 
     .images {
         margin: auto;
-        width: 80%;
+        width: 90%;
     }
 
 }
@@ -670,6 +706,23 @@ body {
 
     .images {
         padding: 50px 0px 0px 30px;
+        max-width: 95%;
+    }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column {
+      flex: 100%;
+      max-width: 100%;
     }
 
 }
