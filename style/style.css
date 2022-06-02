@@ -82,19 +82,19 @@ a:visited {
     cursor: pointer;
 }
   
-.modal-header {
+.home-modal-header {
     padding: 10px 20px 0px 20px;
     background-color: transparent;
     color: black;
 }
 
-.modal-header p {
+.home-modal-header p {
     padding: 0px 0px 0px 0px;
     background-color: transparent;
     color: black;
 }
   
-.modal-body {
+.home-modal-body {
     padding: 20px 20px;
 }
   
@@ -202,11 +202,11 @@ body {
 .column {
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 10px;
 }
   
 .column img {
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 20px 0px;
     vertical-align: middle;
     width: 100%;
 }
@@ -227,6 +227,15 @@ body {
     font-size: 20px;
     padding: 5px;
 }
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 @media screen and (min-width:1000px)  {
 
@@ -273,7 +282,7 @@ body {
     }
 
     /* The Modal (background) */
-    .modal {
+    .home-modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
         z-index: 1; /* Sit on top */
@@ -288,7 +297,7 @@ body {
     }
     
     /* Modal Content */
-    .modal-content {
+    .home-modal-content {
         position: relative;
         background-color: whitesmoke;
         margin: auto;
@@ -504,7 +513,7 @@ body {
     }
 
    /* The Modal (background) */
-    .modal {
+    .home-modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
         z-index: 1; /* Sit on top */
@@ -519,7 +528,7 @@ body {
     }
     
     /* Modal Content */
-    .modal-content {
+    .home-modal-content {
         position: relative;
         background-color: whitesmoke;
         margin: auto;
