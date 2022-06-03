@@ -201,6 +201,7 @@ body {
 /* Create four equal columns that sits next to each other */
 .columnv {
     flex: 1;
+    max-width: 28.5%;
     padding: 0 10px;
 }
 
