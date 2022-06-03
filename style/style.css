@@ -199,13 +199,19 @@ body {
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
-    flex: 33%;
-    max-width: 33%;
+.columnv {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.columnh {
+    flex: 2;
+    max-width: 43%;
     padding: 0 10px;
 }
   
-.column img {
+.columnh img,
+.columnv img {
     margin: 0px 0px 20px 0px;
     vertical-align: middle;
     width: 100%;
@@ -718,18 +724,8 @@ img.hover-shadow {
         max-width: 95%;
     }
 
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-
-}
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-
-    .column {
+    .columnh, 
+    .columnv {
       flex: 100%;
       max-width: 100%;
     }
