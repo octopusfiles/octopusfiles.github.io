@@ -724,10 +724,24 @@ img.hover-shadow {
         max-width: 95%;
     }
 
-    .columnh, 
-    .columnv {
+    .columnh {
       flex: 100%;
       max-width: 100%;
     }
 
+    .columnv {
+        flex: 50%;
+        max-width: 50%;
+      }
+
+}
+
+@media screen and (max-width:600px)  {
+
+    .columnh,
+    .columnv {
+        flex:100%;
+        max-width: 100%;
+    }
+    
 }
