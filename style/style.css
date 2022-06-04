@@ -118,6 +118,15 @@ a:visited {
     line-height: 1.5;
 }
 
+.home-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    background-color: black;
+    height: fit-content;
+}
+
 .footer {
     width: 100%;
     position: fixed;
@@ -376,6 +385,15 @@ img.hover-shadow {
     .nav-links ul li a:visited {
         color: darkred;
         text-decoration: none;
+    }
+
+    .home-footer p {
+        color: whitesmoke;
+        background-color: transparent;
+        padding: 3px 0px;
+        font-size: 13px;
+        margin: auto;
+        width: 40%;
     }
 
     .footer p {
@@ -637,6 +655,14 @@ img.hover-shadow {
     
     .content p {
         padding: 5px 0px 5px 0px;
+    }
+
+    .home-footer p {
+        color: whitesmoke;
+        background-color: transparent;
+        padding: 3px 0px 3px 30px;
+        width: 90%; 
+        font-size: 12px;
     }
     
     .footer p {
