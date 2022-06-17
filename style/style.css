@@ -252,6 +252,57 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+meter { 
+    height: 5px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    background-color: black;
+    font-size: 5px;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+    -webkit-animation: progressBar 3s ease-in-out;
+    -webkit-animation-fill-mode:both; 
+    -moz-animation: progressBar 3s ease-in-out;
+    -moz-animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@-webkit-keyframes progressBar {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+  
+@-moz-keyframes progressBar {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+.choice-button button {
+    font-size: 15px;
+    margin: 15px 15px 0px 0px;
+    background-color: black;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 2px 2px #444444;
+}
+
+.choice-button button p {
+    color: whitesmoke;
+    background-color: transparent;
+    padding: 3px 5px;
+}
 
 @media screen and (min-width:1000px)  {
 
