@@ -36,9 +36,7 @@
         <!--Nav Bar-->
 
         <div class="header">
-            <div class="progress-container">
-              <div class="progress-bar" id="myBar"></div>
-            </div>
+            
           </div>
 
         <div class="nav-bar" id="nav-bar">
@@ -73,9 +71,9 @@
 
         <div class="content">
 
-            <h1 class="anchor" id="title">
-                fact and fiction on social media
-            </h1>
+                <h1 class="anchor" id="title">
+                    fact and fiction on social media
+                </h1>
 
             <!-- <div class="toc" id="toc">
                 <p>table of contents</p>
@@ -205,6 +203,27 @@
                 <a onClick="window.scroll({ top: 0,left: 0,behavior: 'smooth' });"><img src="../assets/arrow.png" alt="back to top" style="cursor: pointer;"></a>
 
             </div>
+
+            <!-- The Modal -->
+
+            <div id="myModal" class="text-modal">
+                
+                <!-- Modal content -->
+                
+                    <div class="text-modal-content">
+
+                        <div class="text-modal-header">
+                            <span class="close">&times;</span>
+                            <p>read more:</p>
+                        </div>
+
+                        <div class="text-modal-body">
+                            <p>"O rise, frogman, smoothly and without panic, up from the depths, trailing your train of air; bring us news of sunk Atlantis, our fabled pasts. Keep us in touch."</p>
+                        </div>
+
+                    </div>
+                
+            </div>
         
         </div>
 
@@ -212,7 +231,11 @@
 
         <div class="footer">
 
-            <p>1500 words | 12 minutes</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+
+            <p>1500 words | 12 minutes | <a href="#" id="myBtn">[more]</a></p>
 
         </div>
 
@@ -248,8 +271,46 @@
             var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             var scrolled = (winScroll / height) * 100;
             document.getElementById("myBar").style.width = scrolled + "%";
+
+            
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                document.getElementById("title").style.fontSize = "22px";
+            } else {
+                document.getElementById("title").style.fontSize = "30px";
+            }
+
             } 
 
+        </script>
+ 
+        <!-- Modal -->
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+            }
+        }
         </script>
     
     </body>

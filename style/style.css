@@ -14,9 +14,26 @@
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+ul, ol {
+    font-size: 14px;
+}
+
 a:link {
     color: darkred;
     text-decoration: none;
+    background: transparent;
 }
 
 a:hover {
@@ -64,6 +81,17 @@ a:visited {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
+
+  /* Add MODAL Animation */
+  @-webkit-keyframes animatebottom {
+    from {bottom:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatebottom {
+    from {bottom:-300px; opacity:0}
+    to {bottom:0; opacity:1}
+}
   
   /* The Close Button */
 .close {
@@ -97,6 +125,22 @@ a:visited {
 .home-modal-body {
     padding: 20px 20px;
 }
+
+.text-modal-header {
+    padding: 10px 20px 0px 20px;
+    background-color: transparent;
+    color: black;
+}
+
+.text-modal-header p {
+    padding: 0px 0px 0px 0px;
+    background-color: transparent;
+    color: black;
+}
+  
+.text-modal-body {
+    padding: 20px 20px;
+}
   
 .blink2 {
     animation-name: blink;
@@ -112,6 +156,10 @@ a:visited {
 
 .octopus {
     color: darkred
+}
+
+#title {
+    transition: 0.5s;
 }
 
 .content p {
@@ -310,18 +358,6 @@ meter {
         width: 100%;
     }
 
-    h1 {
-        font-size: 30px;
-    }
-    
-    h2 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
     .home-logo {
         position: absolute;
         top: 145px;
@@ -378,14 +414,42 @@ meter {
         animation-duration: 0.4s
     }
 
+       /* The Modal (background) */
+       .text-modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 210px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: whitesmoke; /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .text-modal-content {
+        position: relative;
+        background-color: whitesmoke;
+        margin: auto;
+        padding: 0;
+        border: 2px solid darkred;
+        width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatebottom;
+        animation-duration: 0.4s
+    }
+
     .nav-bar {
         margin: auto;
         width: 50%;
         display: flex;
         padding: 50px 0px 15px 0px;
         max-width: 500px;
-        position: sticky;
-        top: -50px;
     }
 
   
@@ -461,10 +525,11 @@ meter {
     
     .toc {
         font-size: 13px;
-        position: fixed;
         left: 7.5%;
         width: 15vw;
         max-width: 250px;
+        position: fixed;
+        top:30%;
     }
 
     .content {
@@ -482,7 +547,7 @@ meter {
 
     .content h1 {
         position: sticky;
-        top: 45px;
+        top: -5px;
     }
 
     .content p {
@@ -551,22 +616,6 @@ meter {
 
 
 @media screen and (max-width:999px)  {
-
-    h1 {
-        font-size: 26px;
-    }
-    
-    h2 {
-        font-size: 22px;
-    }
-
-    p {
-        font-size: 13px;
-    }
-
-    ul, ol {
-        font-size: 13px;
-    }
     
     .home-bar {
         padding: 100px 0px 30px 30px;
@@ -622,6 +671,36 @@ meter {
         -webkit-animation-name: animatetop;
         -webkit-animation-duration: 0.4s;
         animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+
+       /* The Modal (background) */
+       .text-modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 150px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: whitesmoke; /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .text-modal-content {
+        position: relative;
+        background-color: whitesmoke;
+        margin: auto;
+        padding: 0;
+        border: 2px solid darkred;
+        width: 70%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatebottom;
         animation-duration: 0.4s
     }
             
@@ -725,7 +804,7 @@ meter {
         background-color: transparent;
         padding: 3px 0px 3px 30px;
         width: 90%; 
-        font-size: 12px;
+        font-size: 13px;
     }
     
     .footer p {
@@ -733,7 +812,7 @@ meter {
         background-color: transparent;
         padding: 3px 0px 3px 30px;
         width: 90%; 
-        font-size: 12px;
+        font-size: 13px;
     }
     
     .toc {
