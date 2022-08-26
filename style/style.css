@@ -39,16 +39,28 @@ a:link {
 a:hover {
     color: darkred;
     text-decoration: underline;
+    transition: 0.5s;
 }
 
 a:active {
     color: darkred;
     text-decoration: underline;
+    transition: 0.5s;
 }
 
 a:visited {
     color: darkred;
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: whitesmoke;
+    background: darkred;
+  }
+  
+  ::selection {
+    color: whitesmoke;
+    background: darkred;
+  }
 
 .content ul {
     list-style: outside square;
@@ -570,6 +582,12 @@ meter {
     .sidenote__button {
         cursor: pointer;
         color: #008b8b;
+    }
+
+    .sidenote__button:hover {
+        cursor: pointer;
+        color: #008b8b;
+        text-decoration: underline;
     }
 
     .sidenote {
