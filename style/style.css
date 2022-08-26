@@ -167,7 +167,8 @@ a:visited {
 }
 
 .octopus {
-    color: darkred
+    color: whitesmoke;
+    background-color: darkred;
 }
 
 #title {
