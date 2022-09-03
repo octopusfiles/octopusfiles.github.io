@@ -62,12 +62,12 @@ blockquote {
 ::-moz-selection { /* Code for Firefox */
     color: whitesmoke;
     background: #008b8b;
-  }
+}
   
-  ::selection {
+::selection {
     color: whitesmoke;
     background: #008b8b;
-  }
+}
 
 .content ul {
     list-style: outside square;
