@@ -24,6 +24,7 @@ h2 {
 
 p {
     font-size: 15px;
+    text-align: left;
 }
 
 ul, ol {
@@ -53,10 +54,17 @@ a:visited {
 }
 
 blockquote {
-    opacity: 0.8;
     margin: 15px 0px;
     padding: 0px 0px 0px 15px;
     border-left: 5px solid #008b8b;
+    font-size: 14px;
+}
+
+.pullquote {
+    font-size: 20px;
+    border-left: 5px solid darkred;
+    padding: 0px 0px 0px 15px;
+    margin: 15px 0px;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -236,7 +244,6 @@ body {
 .sidenote {
     color: black;
     font-size: 13px;
-    opacity: 80%;
 }
 
 /* Hidden semantic content */
@@ -244,15 +251,6 @@ body {
     position: absolute;
     left: -99999px;
     top: auto;
-}
-
-/* Style the header: fixed position (always stay at the top) */
-.header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: whitesmoke;
 }
   
 /* The progress container (grey background) */
@@ -570,7 +568,7 @@ meter {
         top: -5px;
     }
 
-    .content p {
+    p {
         padding: 5px 0px 5px 0px;
     }
     
@@ -599,7 +597,6 @@ meter {
     }
 
     .sidenote {
-
         position: relative;
         width: 15vw;
         max-width: 250px;
@@ -619,7 +616,8 @@ meter {
     /* Highlight the sidenote when mouse hovers on the label. */
     .label:hover .sidenote,
     .label:hover .sidenote__button::after {
-        background-color: #cacaca;
+        color: whitesmoke;
+        background-color: darkred;
         transition: 0.5s;
     }
 
@@ -821,7 +819,7 @@ meter {
         top: -5px;
     }
     
-    .content p {
+    p {
         padding: 5px 0px 5px 0px;
     }
 
@@ -861,7 +859,7 @@ meter {
     
     .sidenote__button {
         cursor: pointer;
-        color: darkblue;
+        color: #008b8b;
     }
       
     .arrow {
@@ -901,7 +899,8 @@ meter {
         text-align: left;
 
         /* VISUALLY SEPARATE SIDENOTE INLINE */
-        background-color: #cacaca;
+        color: whitesmoke;
+        background-color: darkred;
     }
 
     .sidenote__checkbox ~ .sidenote__button {
