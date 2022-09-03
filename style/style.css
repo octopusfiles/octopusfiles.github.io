@@ -52,14 +52,21 @@ a:visited {
     color: darkred;
 }
 
+blockquote {
+    opacity: 0.8;
+    margin: 15px 0px;
+    padding: 0px 0px 0px 15px;
+    border-left: 5px solid #008b8b;
+}
+
 ::-moz-selection { /* Code for Firefox */
     color: whitesmoke;
-    background: darkred;
+    background: #008b8b;
   }
   
   ::selection {
     color: whitesmoke;
-    background: darkred;
+    background: #008b8b;
   }
 
 .content ul {
