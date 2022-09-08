@@ -467,7 +467,7 @@ meter {
         width: 50%;
         display: flex;
         padding: 50px 0px 15px 0px;
-        max-width: 500px;
+        max-width: 567px;
     }
 
   
@@ -494,7 +494,7 @@ meter {
         margin: auto;
         width: 50%;
         padding: 0px 0px 50px 0px;
-        max-width: 500px;
+        max-width: 567px;
     }
 
     .nav-links ul li {
@@ -538,7 +538,7 @@ meter {
         padding: 3px 0px;
         width: 50%;
         font-size: 13px;
-        max-width: 500px;
+        max-width: 567px;
     }
     
     .toc {
@@ -554,7 +554,7 @@ meter {
         margin: auto;
         width: 50%;
         padding: 50px 0px;
-        max-width: 500px;
+        max-width: 567px;
     }
     
     .content h1,
