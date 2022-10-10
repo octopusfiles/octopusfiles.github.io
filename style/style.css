@@ -370,6 +370,11 @@ meter {
     padding: 3px 5px;
 }
 
+@keyframes arrowappear {
+    from {opacity:0}
+    to {opacity:1}
+}
+
 @media screen and (min-width:1000px)  {
 
     body {
@@ -622,9 +627,12 @@ meter {
     }
 
     .arrow {
+        display: none;
         position: fixed;
         bottom: 20px;
         left: 10vw;
+        animation-name: arrowappear;
+        animation-duration: 0.4s
     }
 
     .arrow img {
@@ -863,9 +871,12 @@ meter {
     }
       
     .arrow {
+        display: none;
         position: fixed;
         bottom: 20px;
         right: 2.5vw;
+        animation-name: arrowappear;
+        animation-duration: 0.4s
     }
     
     .arrow img {

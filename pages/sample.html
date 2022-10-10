@@ -139,7 +139,7 @@
             
             </div>
 
-            <div class="arrow">
+            <div id="arrow" class="arrow">
                
                 <a onClick="window.scroll({ top: 0,left: 0,behavior: 'smooth' });"><img src="../assets/arrow.png" alt="back to top" style="cursor: pointer;"></a>
     
@@ -219,11 +219,11 @@
                 document.getElementById("title").style.fontSize = "30px";
             }
 
-            // if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            //     document.getElementById("arrow") = "block";
-            // } else {
-            //     document.getElementById("arrow") = "none";
-            // }
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                document.getElementById("arrow").style.display = "block";
+            } else {
+                document.getElementById("arrow").style.display = "none";
+            }
 
             } 
 
