@@ -59,7 +59,8 @@
                 <li><a href="work.html">work</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="contact.html">contact</a></li>
-                <!-- <li><button onclick="toggleTheme()">&#9728;/&#9675;</button></li> -->
+                <li><a onclick="swapStyleSheet('../style/style.css')">&#9728;</a></li>
+                <li><a onclick="swapStyleSheet('../style/style2.css')">&#9680;</a></li>
             </ul>
 
         </div>
@@ -141,6 +142,15 @@
             }
 
             } 
+
+        </script>
+
+        <script>
+
+            function swapStyleSheet(sheet) {
+                document.getElementById('style').setAttribute('href', sheet);
+            }
+
 
         </script>
 
