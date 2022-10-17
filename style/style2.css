@@ -5,13 +5,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inconsolata', monospace;
-    background-color: black;
+    background-color: darkgrey;
     background-size: cover;
 
 }
 
 .html {
     scroll-behavior: smooth;
+}
+
+h1, h2, h3, p, ul, ol, blockquote, .pullquote {
+    color: whitesmoke;
 }
 
 h1 {
@@ -177,8 +181,8 @@ blockquote {
 }
 
 @keyframes blink {
-    from {color: whitesmoke;}
-    to {color: #444444;}
+    from {color: darkgray;}
+    to {color: whitesmoke;}
 }
 
 .octopus {
@@ -242,7 +246,7 @@ body {
 }
 
 .sidenote {
-    color: black;
+    color: whitesmoke;
     font-size: 13px;
 }
 
