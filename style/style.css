@@ -807,7 +807,7 @@ meter {
         background-color: black;
         color: #e05b5b;
         padding: 5px;
-
+        font-size: 13px;
         border: none;
         cursor: pointer;
     }
