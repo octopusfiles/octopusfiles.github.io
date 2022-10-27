@@ -5,17 +5,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inconsolata', monospace;
-    background-color: #121212;
     background-size: cover;
 
 }
 
 .html {
     scroll-behavior: smooth;
+    background-color: whitesmoke;
 }
 
+
 h1, h2, h3, p, ul, ol, i, blockquote, .pullquote {
-    color: whitesmoke;
+    color: black;
+    background-color: white;
 }
 
 ul, ol li {
@@ -40,49 +42,49 @@ ul, ol {
 }
 
 a:link {
-    color: #e05b5b;
+    color: darkred;
     text-decoration: none;
     background: transparent;
 }
 
 a:hover {
-    color: #e05b5b;
+    color: darkred;
     text-decoration: underline;
     transition: 0.5s;
 }
 
 a:active {
-    color: #e05b5b;
+    color: darkred;
     text-decoration: underline;
     transition: 0.5s;
 }
 
 a:visited {
-    color: #e05b5b;
+    color: darkred;
 }
 
 blockquote {
     margin: 15px 0px;
     padding: 0px 0px 0px 15px;
-    border-left: 5px solid #5be0e0;
+    border-left: 5px solid #008b8b;
     font-size: 14px;
 }
 
 .pullquote {
     font-size: 20px;
-    border-left: 5px solid #e05b5b;
+    border-left: 5px solid darkred;
     padding: 0px 0px 0px 15px;
     margin: 15px 0px;
 }
 
 ::-moz-selection { /* Code for Firefox */
     color: whitesmoke;
-    background: #5be0e0;
+    background: #008b8b;
 }
   
 ::selection {
     color: whitesmoke;
-    background: #5be0e0;
+    background: #008b8b;
 }
 
 .content ul {
@@ -130,7 +132,7 @@ blockquote {
   
   /* The Close Button */
 .close {
-    color: whitesmoke;
+    color: black;
     position: relative;
     top: 10px;
     left: 95%;
@@ -140,7 +142,7 @@ blockquote {
   
 .close:hover,
 .close:focus {
-    color: #e05b5b;
+    color: darkred;
     text-decoration: none;
     cursor: pointer;
 }
@@ -148,13 +150,13 @@ blockquote {
 .home-modal-header {
     padding: 10px 20px 0px 20px;
     background-color: transparent;
-    color: whitesmoke;
+    color: black;
 }
 
 .home-modal-header p {
     padding: 0px 0px 0px 0px;
     background-color: transparent;
-    color: whitesmoke;
+    color: black;
 }
   
 .home-modal-body {
@@ -164,13 +166,13 @@ blockquote {
 .text-modal-header {
     padding: 10px 20px 0px 20px;
     background-color: transparent;
-    color: whitesmoke;
+    color: black;
 }
 
 .text-modal-header p {
     padding: 0px 0px 0px 0px;
     background-color: transparent;
-    color: whitesmoke;
+    color: black;
 }
   
 .text-modal-body {
@@ -185,13 +187,13 @@ blockquote {
 }
 
 @keyframes blink {
-    from {color: #121212;}
-    to {color: whitesmoke;}
+    from {color: whitesmoke;}
+    to {color: #444444;}
 }
 
 .octopus {
     color: whitesmoke;
-    background-color: #e05b5b;
+    background-color: darkred;
 }
 
 #title {
@@ -250,7 +252,7 @@ body {
 }
 
 .sidenote {
-    color: whitesmoke;
+    color: black;
     font-size: 13px;
 }
 
@@ -271,7 +273,7 @@ body {
 /* The progress bar (scroll indicator) */
   .progress-bar {
     height: 4px;
-    background: #e05b5b;
+    background: darkred;
     width: 0%;
 }
 
@@ -338,7 +340,7 @@ meter {
 }
 
 .progress {
-    background-color: #121212;
+    background-color: black;
     font-size: 5px;
     animation: progressBar 3s ease-in-out;
     animation-fill-mode:both; 
@@ -366,14 +368,14 @@ meter {
 .choice-button button {
     font-size: 15px;
     margin: 15px 15px 0px 0px;
-    background-color: white;
+    background-color: black;
     cursor: pointer;
     width: 100%;
     box-shadow: 2px 2px #444444;
 }
 
 .choice-button button p {
-    color: black;
+    color: whitesmoke;
     background-color: transparent;
     padding: 3px 5px;
 }
@@ -426,17 +428,17 @@ meter {
         width: 100%; /* Full width */
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
-        background-color: #121212; /* Fallback color */
+        background-color: whitesmoke; /* Fallback color */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
     
     /* Modal Content */
     .home-modal-content {
         position: relative;
-        background-color: #121212;
+        background-color: whitesmoke;
         margin: auto;
         padding: 0;
-        border: 2px solid #e05b5b;
+        border: 2px solid darkred;
         width: 50%;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
         -webkit-animation-name: animatetop;
@@ -456,17 +458,17 @@ meter {
         width: 100%; /* Full width */
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
-        background-color: #121212; /* Fallback color */
+        background-color: whitesmoke; /* Fallback color */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
     
     /* Modal Content */
     .text-modal-content {
         position: relative;
-        background-color: #121212;
+        background-color: whitesmoke;
         margin: auto;
         padding: 0;
-        border: 2px solid #e05b5b;
+        border: 2px solid darkred;
         width: 50%;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
         -webkit-animation-name: animatetop;
@@ -488,14 +490,15 @@ meter {
         height: 30px;
         margin: 15px 50px 0px 0px;
         padding: 0px 0px 0px 0px;
-        background-color: #e05b5b;
+        background-color: darkred;
         border-radius: 50%;
+        
     }
 
-     /* Dropdown Button */
-     .dropbtn {
+        /* Dropdown Button */
+    .dropbtn {
         background-color: transparent;
-        color: #e05b5b;
+        color: darkred;
         padding: 5px;
 
         border: none;
@@ -504,7 +507,7 @@ meter {
     
     /* Dropdown button on hover & focus */
     .dropbtn:hover, .dropbtn:focus {
-        background-color: #e05b5b;
+        background-color: darkred;
         color: whitesmoke;
     }
     
@@ -526,10 +529,11 @@ meter {
     
     /* Links inside the dropdown */
     .dropdown-content a {
-        color: whitesmoke;
+        color: black;
         padding: 10px 15px;
         text-decoration: none;
         display: block;
+        font-size: 13px;
     }
     
     /* Change color of dropdown links on hover */
@@ -564,22 +568,22 @@ meter {
     }
 
     .nav-links ul li a:link {
-        color: #e05b5b;
+        color: darkred;
         text-decoration: none;
      }
 
     .nav-links ul li a:hover {
-        color: #e05b5b;
+        color: darkred;
         text-decoration: underline;
     }
 
     .nav-links ul li a:active {
-        color: #e05b5b;
+        color: darkred;
         text-decoration: underline;
     }
 
     .nav-links ul li a:visited {
-        color: #e05b5b;
+        color: darkred;
         text-decoration: none;
     }
 
@@ -648,12 +652,12 @@ meter {
 
     .sidenote__button {
         cursor: pointer;
-        color: #5be0e0;
+        color: #008b8b;
     }
 
     .sidenote__button:hover {
         cursor: pointer;
-        color: #5be0e0;
+        color: #008b8b;
         text-decoration: underline;
     }
 
@@ -678,7 +682,7 @@ meter {
     .label:hover .sidenote,
     .label:hover .sidenote__button::after {
         color: whitesmoke;
-        background-color: #e05b5b;
+        background-color: darkred;
         transition: 0.5s;
     }
 
@@ -743,17 +747,17 @@ meter {
         width: 100%; /* Full width */
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
-        background-color: #121212; /* Fallback color */
+        background-color: whitesmoke; /* Fallback color */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
     
     /* Modal Content */
     .home-modal-content {
         position: relative;
-        background-color: #121212;
+        background-color: whitesmoke;
         margin: auto;
         padding: 0;
-        border: 2px solid #e05b5b;
+        border: 2px solid darkred;
         width: 70%;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
         -webkit-animation-name: animatetop;
@@ -773,17 +777,17 @@ meter {
         width: 100%; /* Full width */
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
-        background-color: #121212; /* Fallback color */
+        background-color: whitesmoke; /* Fallback color */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
     
     /* Modal Content */
     .text-modal-content {
         position: relative;
-        background-color: #121212;
+        background-color: whitesmoke;
         margin: auto;
         padding: 0;
-        border: 2px solid #e05b5b;
+        border: 2px solid darkred;
         width: 70%;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
         -webkit-animation-name: animatetop;
@@ -799,14 +803,14 @@ meter {
 
     .nav-logo img {
         height: 30px;
-        background-color: #e05b5b;
+        background-color: darkred;
         border-radius: 50%;
     }
 
-    /* Dropdown Button */
-    .dropbtn {
-        background-color: transparent;
-        color: #e05b5b;
+       /* Dropdown Button */
+       .dropbtn {
+        background-color: darkred;
+        color: whitesmoke;
         padding: 5px;
 
         border: none;
@@ -815,8 +819,8 @@ meter {
     
     /* Dropdown button on hover & focus */
     .dropbtn:hover, .dropbtn:focus {
-        background-color: #e05b5b;
-        color: whitesmoke;
+        background-color: whitesmoke;
+        color: darkred;
     }
     
     /* The container <div> - needed to position the dropdown content */
@@ -830,7 +834,7 @@ meter {
         display: none;
         position: absolute;
         background-color: #f1f1f1;
-        min-width: 90px;
+        min-width: 80px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
@@ -841,10 +845,11 @@ meter {
         padding: 10px 15px;
         text-decoration: none;
         display: block;
+        font-size: 13px;
     }
     
     /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: #ddd;}
+    .dropdown-content a:hover {background-color: #363636;}
     
     /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
     .show {display:block;} 
@@ -971,7 +976,7 @@ meter {
     
     .sidenote__button {
         cursor: pointer;
-        color: #5be0e0;
+        color: #008b8b;
     }
       
     .arrow {
@@ -1015,16 +1020,16 @@ meter {
 
         /* VISUALLY SEPARATE SIDENOTE INLINE */
         color: whitesmoke;
-        background-color: #e05b5b;
+        background-color: darkred;
     }
 
     .sidenote__checkbox ~ .sidenote__button {
-        color: #5be0e0;
+        color: #008b8b;
     }
 
     /* SHOW THAT SIDENOTE IS EXPANDED */
     .sidenote__checkbox:checked ~ .sidenote__button {
-        color:#5be0e0;
+        color:#008b8b;
         text-decoration: underline;
     }
 
