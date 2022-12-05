@@ -63,7 +63,7 @@ a:visited {
 
 blockquote {
     margin: 15px 0px;
-    padding: 0px 0px 0px 15px;
+    padding: 10px 15px;
     border-left: 5px solid #5be0e0;
     font-size: 14px;
 }
@@ -71,7 +71,7 @@ blockquote {
 .pullquote {
     font-size: 20px;
     border-left: 5px solid #e05b5b;
-    padding: 0px 0px 0px 15px;
+    padding: 10px 15px;
     margin: 15px 0px;
 }
 
