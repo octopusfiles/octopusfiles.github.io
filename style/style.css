@@ -686,7 +686,7 @@ meter {
     .arrow {
         display: none;
         position: fixed;
-        bottom: 20px;
+        bottom: 18px;
         left: 10vw;
         animation-name: arrowappear;
         animation-duration: 0.4s
@@ -977,7 +977,7 @@ meter {
     .arrow {
         display: none;
         position: fixed;
-        bottom: 20px;
+        bottom: 18px;
         right: 2.5vw;
         animation-name: arrowappear;
         animation-duration: 0.4s
