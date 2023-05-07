@@ -662,13 +662,13 @@ meter {
         position: relative;
         width: 15vw;
         max-width: 250px;
-        border: 1px solid gray;
+        border-left: 5px solid #e05b5b;
 
         float: right;
         clear: right;
         margin-right: -24.5vw;
         text-align: left;
-        padding: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 15px;
     
         top: -1rem;
         width: 15vw;
