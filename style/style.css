@@ -61,6 +61,27 @@ a:visited {
     color: #e05b5b;
 }
 
+.sidenote a:link {
+    color: whitesmoke;
+    text-decoration: underline;
+    background: transparent;
+}
+
+.sidenote a:hover {
+    color:  whitesmoke;
+    text-decoration: underline;
+}
+
+.sidenote a:active {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.sidenote a:visited {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
 blockquote {
     margin: 15px 0px;
     padding: 10px 15px;
