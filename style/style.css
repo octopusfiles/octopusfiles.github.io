@@ -710,7 +710,7 @@ meter {
         bottom: 18px;
         left: 10vw;
         animation-name: arrowappear;
-        animation-duration: 0.4s
+        animation-duration: 0.4s;
     }
 
     .arrow img {
@@ -1001,7 +1001,7 @@ meter {
         bottom: 18px;
         right: 2.5vw;
         animation-name: arrowappear;
-        animation-duration: 0.4s
+        animation-duration: 0.4s;
     }
     
     .arrow img {
