@@ -35,6 +35,8 @@
         
         <!--Nav Bar-->
 
+        <div class="page">
+
         <div class="nav-bar" id="nav-bar">
 
             <div class="nav-logo">
@@ -42,7 +44,7 @@
             </div>
 
             <div class="title-text">
-                <h2><span class="octopus">octopus</span>files<span class="blink2">&#9616;</span></h2>
+                <h1><span class="octopus">octopus</span>files<span class="blink">&#9616;</span></h1>
             </div>
 
             <i class="open-menu" onclick="showMenu()">menu</i>
@@ -54,7 +56,7 @@
             <i class="close-menu" onclick="closeMenu()">close</i>
 
             <ul>
-                <li><a href="words.html">words</a></li>
+                <li><a href="words.html"><span class="active">words</span></a></li>
                 <!-- <li><a href="../pages/images.html">images</a></li> -->
                 <!-- <li><a href="../pages/work.html">work</a></li> -->
                 <li><a href="https://log.octopusfiles.com" target="_blank" rel="noopener noreferrer">log</a></li>
@@ -104,6 +106,8 @@
 
         </div>
 
+        </div>
+
         <!--Menu Open/Close-->
 
         <script>
@@ -113,12 +117,14 @@
             function showMenu(){
 
                 show.style.right = "0";
+                document.body.style.overflow = "hidden";
 
             }
 
             function closeMenu(){
 
-                show.style.right = "-150px";
+                show.style.right = "-100%";
+                document.body.style.overflow = "scroll";
 
             }
 
@@ -138,47 +144,9 @@
             // var scrolled = (winScroll / height) * 100;
             // document.getElementById("myBar").style.width = scrolled + "%";
 
-            
-            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-                document.getElementById("title").style.fontSize = "22px";
-            } else {
-                document.getElementById("title").style.fontSize = "30px";
-            }
-
             } 
 
         </script>
-
-        <script>
-
-            function swapStyleSheet(sheet) {
-                document.getElementById('style').setAttribute('href', sheet);
-            }
-
-
-        </script>
-
-<script>
-    /* When the user clicks on the button,
-    toggle between hiding and showing the dropdown content */
-    function dropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown menu if the user clicks outside of it
-    window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-        }
-        }
-    }
-    } 
-</script>
 
     </body>
 

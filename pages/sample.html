@@ -33,6 +33,38 @@
 
     <body>
         
+        <!-- Alt Bar -->
+
+        <div class="alt-bar" id="alt-bar">
+
+            <div class="progress-container">
+            
+                <div class="progress-bar" id="myBar"></div>
+                
+            </div>
+
+            <div class="general">
+
+                <div class="nav-logo">
+                    <img src="../assets/logo.png" alt="octopusfiles">
+                </div>
+
+                <h1>
+                    unnecessarily long title so that it takes up more than one line
+                </h1>
+
+                <div id="arrow" class="arrow">
+               
+                <a onClick="window.scroll({ top: 0,left: 0,behavior: 'smooth' });"><img src="../assets/arrow.png" alt="back to top" style="cursor: pointer;"></a>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="page">
+
         <!--Nav Bar-->
 
         <div class="nav-bar" id="nav-bar">
@@ -42,7 +74,7 @@
             </div>
 
             <div class="title-text">
-                <h2><span class="octopus">octopus</span>files<span class="blink2">&#9616;</span></h2>
+                <h1><span class="octopus">octopus</span>files<span class="blink">&#9616;</span></h1>
             </div>
 
             <i class="open-menu" onclick="showMenu()">menu</i>
@@ -54,7 +86,7 @@
             <i class="close-menu" onclick="closeMenu()">close</i>
 
             <ul>
-                <li><a href="words.html">words</a></li>
+                <li><a href="words.html"><span class="active">words</span></a></li>
                <!-- <li><a href="../pages/images.html">images</a></li> -->
                 <!-- <li><a href="../pages/work.html">work</a></li> -->
                 <li><a href="https://log.octopusfiles.com" target="_blank" rel="noopener noreferrer">log</a></li>
@@ -76,7 +108,7 @@
         <div class="content">
 
             <p>
-                <a href="../pages/archive.html">&larr; archive</a>
+                <a href="../pages/words.html">&larr; words</a>
             </p>
 
             <h1 class="anchor" id="title">
@@ -84,13 +116,11 @@
             </h1>
 
             <div class="toc" id="toc">
-                <p>table of contents</p>
                 <ul>
-                    <li><a onclick="document.getElementById('title').scrollIntoView({behavior: 'smooth', block: 'center' });">unnecessarily long title so that it takes up more than one line</a></li>
-                    <li><a onclick="document.getElementById('one').scrollIntoView({behavior: 'smooth', block: 'center' });">part one</a></li>
-                    <li><a onclick="document.getElementById('two').scrollIntoView({behavior: 'smooth', block: 'center' });">part two</a></li>
-                    <li><a onclick="document.getElementById('three').scrollIntoView({behavior: 'smooth', block: 'center' });">part three</a></li>
-                    <li><a onclick="document.getElementById('four').scrollIntoView({behavior: 'smooth', block: 'center'  });">part four</a></li>
+                    <li class="one menu-on" ><a onclick="document.getElementById('one').scrollIntoView({behavior: 'smooth'});">part one</a></li>
+                    <li class="two"><a onclick="document.getElementById('two').scrollIntoView({behavior: 'smooth'});">part two</a></li>
+                    <li class="three"><a onclick="document.getElementById('three').scrollIntoView({behavior: 'smooth'});">part three</a></li>
+                    <li class="four"><a onclick="document.getElementById('four').scrollIntoView({behavior: 'smooth'});">part four</a></li>
                 </ul>
     
             </div>
@@ -143,48 +173,15 @@
                     <p>There's more. There's always more to say, more to do, more to read, more to think. We cannot go on. We must go on. Et cetera. Ad infinitum.</p>
                     
                 
-                <br /><br />
+                <br><br><br><br><br><br>
 
                 </div>
             
-            </div>
-
-            <div id="arrow" class="arrow">
-               
-                <a onClick="window.scroll({ top: 0,left: 0,behavior: 'smooth' });"><img src="../assets/arrow.png" alt="back to top" style="cursor: pointer;"></a>
-    
-            </div>
-
-            <div id="myModal" class="text-modal">
-                
-                <!-- Modal content -->
-                
-                    <div class="text-modal-content">
-
-                        <div class="text-modal-header">
-                            <span class="close">&times;</span>
-                            <p>read more:</p>
-                        </div>
-
-                        <div class="text-modal-body">
-                            <p>"O rise, frogman, smoothly and without panic, up from the depths, trailing your train of air; bring us news of sunk Atlantis, our fabled pasts. Keep us in touch."</p>
-                        </div>
-
-                    </div>
-                
             </div>
         
         </div>
 
         <!--Footer-->
-
-        <div class="footer">
-
-            <div class="progress-container">
-                <div class="progress-bar" id="myBar"></div>
-            </div>
-
-            <p>480 words | 6 minutes | <a href="#" id="myBtn">[more]</a></p>
 
         </div>
 
@@ -197,12 +194,14 @@
             function showMenu(){
 
                 show.style.right = "0";
+                document.body.style.overflow = "hidden";
 
             }
 
             function closeMenu(){
 
-                show.style.right = "-150px";
+                show.style.right = "-100%";
+                document.body.style.overflow = "scroll";
 
             }
 
@@ -224,9 +223,9 @@
 
             
             if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-                document.getElementById("title").style.fontSize = "22px";
+                 document.getElementById("alt-bar").style.display = "flex";
             } else {
-                document.getElementById("title").style.fontSize = "30px";
+                 document.getElementById("alt-bar").style.display = "none";
             }
 
             if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
@@ -239,64 +238,36 @@
 
         </script>
 
-        <!-- Modal -->
+<script>
 
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-            
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks the button, open the modal 
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                modal.style.display = "none";
+const h2 = document.querySelectorAll('h2');
+            const navLi = document.querySelectorAll('.page .content .toc ul li');
+
+            window.addEventListener('scroll', ()=> {
+
+                let current = 'one';
+
+            h2.forEach( h2 => {
+
+                const h2Top = h2.offsetTop;
+                const h1Height = h2.clientHeight;
+
+                if(pageYOffset >= (h2Top - 400)){
+                    current = h2.getAttribute('id');
                 }
-            }
-        </script>
+            })
 
-<script>
+            navLi.forEach( li => {
+                li.classList.remove('menu-on');
+                if(li.classList.contains(current)){
+                    li.classList.add('menu-on');
+                }
+            })
 
-    function swapStyleSheet(sheet) {
-        document.getElementById('style').setAttribute('href', sheet);
-    }
+            // console.log(current)
 
-</script>
+            })
 
-<script>
-    /* When the user clicks on the button,
-    toggle between hiding and showing the dropdown content */
-    function dropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown menu if the user clicks outside of it
-    window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-        }
-        }
-    }
-    } 
 </script>
     
     </body>

@@ -37,6 +37,8 @@
         
         <!--Nav Bar-->
 
+        <div class="page">
+
         <div class="nav-bar" id="nav-bar">
 
             <div class="nav-logo">
@@ -44,7 +46,7 @@
             </div>
 
             <div class="title-text">
-                <h2><span class="octopus">octopus</span>files<span class="blink2">&#9616;</span></h2>
+                <h1><span class="octopus">octopus</span>files<span class="blink">&#9616;</span></h1>
             </div>
 
             <i class="open-menu" onclick="showMenu()">menu</i>
@@ -106,6 +108,8 @@
 
         </div>
 
+        </div>
+
         <!--Menu Open/Close-->
 
         <script>
@@ -115,17 +119,18 @@
             function showMenu(){
 
                 show.style.right = "0";
+                document.body.style.overflow = "hidden";
 
             }
 
             function closeMenu(){
 
-                show.style.right = "-150px";
+                show.style.right = "-100%";
+                document.body.style.overflow = "scroll";
 
             }
 
         </script>
-
     </body>
 
 </html>
