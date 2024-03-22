@@ -409,13 +409,34 @@ button {
     border: 2px solid whitesmoke;
     padding: 5px 15px;
     margin: 0 20px 10px 0;
- 
+    color: whitesmoke;
     cursor: pointer; 
 }
 
 a.btn {
     background-color: transparent;
     color: #f1f1f1;
+}
+
+.half-wide {
+    padding: 20px 0 0 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-one {
+    display: flex;
+    flex-direction: row;
+    width:200px;
+    justify-content: space-evenly;    
+}
+
+.row-two {
+    display: flex;
+    flex-direction: row;
+    width:200px;
+    justify-content: space-evenly;
 }
 
 @media screen and (min-width:1650px) {
@@ -1211,10 +1232,6 @@ a.btn {
         font-family: 'commitMono', monospace;
         vertical-align: middle;
 
-    }
-
-    .half-wide {
-        width: 200px;
     }
 
 }
