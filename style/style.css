@@ -846,13 +846,13 @@ a.btn:visited {
     }
 
     .home-logo img {
-        border: 2.5px solid whitesmoke;
-        height: 40px;
+        border: 2px solid whitesmoke;
+        height: 30px;
     }
 
     .home-text h1 {
         font-size: 28px;
-        padding: 5px 0 0 0;
+        padding: 0;
     }
     
     .home {
@@ -1051,13 +1051,13 @@ a.btn:visited {
     }
 
     .home-logo img {
-        border: 2.5px solid whitesmoke;
-        height: 40px;
+        border: 2px solid whitesmoke;
+        height: 30px;
     }
 
     .home-text h1 {
         font-size: 28px;
-        padding: 5px 0 0 0;
+        padding: 0;
     }
     
     .home {
