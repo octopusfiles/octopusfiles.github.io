@@ -370,7 +370,7 @@ meter {
     display: none;
     flex-direction: column;
     position: fixed;
-    bottom: 0;
+    bottom: -1;
     left: 0;
     margin: auto;
     animation-name: arrowappear;
@@ -623,7 +623,7 @@ a.btn:visited {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 10px 0;
+        padding: 10px 0 11px 0;
         padding-left: 10%;
         padding-right: 10%;
         vertical-align: middle;
@@ -815,7 +815,7 @@ a.btn:visited {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 10px 0;
+        padding: 10px 0 11px 0;
         padding-left: 10%;
         padding-right: 10%;
         vertical-align: middle;
@@ -1021,7 +1021,7 @@ a.btn:visited {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 5px 30px;
+        padding: 5px 30px 5px 0;
     }
     
     .general h1 {
@@ -1226,7 +1226,7 @@ a.btn:visited {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 5px 15px;
+        padding: 5px 15px 6px 0;
         padding-left: 15px;
         padding-right: 15px;
     }
