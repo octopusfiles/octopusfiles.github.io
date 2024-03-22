@@ -1,22 +1,22 @@
 /* BASE */
 
 @font-face {
-    font-family: 'commitMono';
+    font-family: cM;
     src: url(../font/CommitMono-400-Regular.otf);
   }
 
 @font-face {
-font-family: 'commitMonoItalic';
+font-family: cMI;
 src: url(../font/CommitMono-400-Italic.otf);
 }
 
 @font-face {
-    font-family: 'commitMonoBold';
+    font-family: cMB;
     src: url(../font/CommitMono-700-Regular.otf);
 }
 
 @font-face {
-    font-family: 'commitMonoBoldItalic';
+    font-family: cMBI;
     src: url(../font/CommitMono-700-Italic.otf);
 }
 
@@ -27,26 +27,26 @@ src: url(../font/CommitMono-400-Italic.otf);
 }
 
 body {
-    font-family: 'commitMono', monospace;
+    font-family: cM, monospace;
     font-weight: normal;
     font-style: normal;
     background-color: #313131;
 }
 
 em {
-    font-family: 'commitMonoItalic', monospace;
+    font-family: cMI, monospace;
     font-weight: normal;
     font-style: normal;
 }
 
 strong {
-    font-family: 'commitMonoBold', monospace;
+    font-family: cMB, monospace;
     font-weight: normal;
     font-style: normal;
 }
 
 em strong {
-    font-family: 'commitMonoBoldItalic', monospace;
+    font-family: cMBI, monospace;
     font-weight: normal;
     font-style: normal;
 }
@@ -61,20 +61,20 @@ h1, h2, h3, p, ul, ol, i, blockquote, .pullquote {
     
 h1 {
     font-size: 22px;
-    font-family: 'commitMonoBold', monospace;
+    font-family: cMB, monospace;
     font-weight: normal;
     font-style: normal;
 }
     
 h2 {
     font-size: 18px;
-    font-family: 'commitMonoBold', monospace;
+    font-family: cMB, monospace;
     font-weight: normal;
     font-style: normal;
 }
 
 h3 {
-    font-family: 'commitMonoBold', monospace;
+    font-family: cMB, monospace;
     font-weight: normal;
     font-style: normal;
 }
@@ -143,7 +143,7 @@ blockquote {
 .pullquote {
     font-size: 18px;
     border-left: 5px solid #e05b5b;
-    font-family: 'commitMonoBoldItalic', monospace;
+    font-family: cMBI, monospace;
     font-weight: normal;
     font-style: normal;
     margin: 30px 0px;
@@ -282,7 +282,7 @@ body {
     position: relative;
     vertical-align: baseline;
     font-size: 0.9em;
-    font-family: 'commitMonoBold', monospace;
+    font-family: cMB, monospace;
     z-index: 0;
 }
 
@@ -291,7 +291,7 @@ body {
     content: " " counter(sidenote-counter);
     vertical-align: super;
     font-size: 0.7em;
-    font-family: 'commitMonoBold', monospace;
+    font-family: cMB, monospace;
 }
 
 .sidenote {
@@ -399,7 +399,7 @@ meter {
 .choice-button button p {
     color: #313131;
     padding: 5px;
-    font-family: 'commitMono', monospace;
+    font-family: cM, monospace;
     font-weight: normal;
     font-style: normal;
 }
@@ -887,7 +887,7 @@ a.btn:visited {
         top: 67.5px;
         cursor: pointer;
         font-size: 14px;
-        font-family: 'commitMonoItalic', monospace;
+        font-family: cMI, monospace;
     }
     
     .nav-links {
@@ -910,7 +910,7 @@ a.btn:visited {
         color: whitesmoke;
         cursor: pointer;
         font-size: 14px;
-        font-family: 'commitMonoItalic', monospace;
+        font-family: cMI, monospace;
     }
     
     .nav-links ul {
@@ -1027,7 +1027,7 @@ a.btn:visited {
     .general h1 {
         font-size: 13px;
         padding: 6px 30px;
-        font-family: 'commitMono', monospace;
+        font-family: cM, monospace;
         vertical-align: middle;
     }
 
@@ -1092,7 +1092,7 @@ a.btn:visited {
         top: 37.5px;
         cursor: pointer;
         font-size: 14px;
-        font-family: 'commitMonoItalic', monospace;
+        font-family: cMI, monospace;
     }
     
     .nav-links {
@@ -1115,7 +1115,7 @@ a.btn:visited {
         color: whitesmoke;
         cursor: pointer;
         font-size: 14px;
-        font-family: 'commitMonoItalic', monospace;
+        font-family: cMI, monospace;
     }
     
     .nav-links ul {
@@ -1234,7 +1234,7 @@ a.btn:visited {
     .general h1 {
         font-size: 13px;
         padding: 0 15px;
-        font-family: 'commitMono', monospace;
+        font-family: cM, monospace;
         vertical-align: middle;
 
     }
