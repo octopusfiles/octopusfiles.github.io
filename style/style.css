@@ -193,7 +193,7 @@ blockquote {
 
 .blink {
     animation-name: blink;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
 }
@@ -497,6 +497,10 @@ a.btn:visited {
         padding: 15px 0 100px 0;
     }
 
+    .mobile-only {
+        display: none;
+    }
+
     .nav-links ul li {
         display: inline-block;
     }
@@ -693,6 +697,10 @@ a.btn:visited {
         display: inline-block;
     }
 
+    .mobile-only {
+        display: none;
+    }
+
     .menu-on {
         color: #e05b5b;
         transition: 0.5s;
@@ -851,8 +859,8 @@ a.btn:visited {
     }
 
     .home-text h1 {
-        font-size: 28px;
-        padding: 0;
+        font-size: 26px;
+        padding: 1px 0 0
     }
     
     .home {
@@ -864,7 +872,7 @@ a.btn:visited {
         background-color: transparent;
         margin: 0 30px;
         width: 75%;
-        font-size: 13px;
+        font-size: 12px;
         padding: 5px 0;
     }
 
@@ -910,7 +918,7 @@ a.btn:visited {
         color: whitesmoke;
         cursor: pointer;
         font-size: 14px;
-        font-family: cMI, monospace;
+        font-family: cM, monospace;
     }
     
     .nav-links ul {
@@ -943,6 +951,31 @@ a.btn:visited {
     }
     
     .nav-links ul a:visited {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    p.mobile-only {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    p.mobile-only a:link {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    p.mobile-only a:hover {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    p.mobile-only a:active {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    
+    p.mobile-only a:visited {
         color: whitesmoke;
         text-decoration: none;
     }
@@ -1056,8 +1089,8 @@ a.btn:visited {
     }
 
     .home-text h1 {
-        font-size: 28px;
-        padding: 0;
+        font-size: 26px;
+        padding: 1px 0 0 0;
     }
     
     .home {
@@ -1069,7 +1102,7 @@ a.btn:visited {
         background-color: transparent;
         margin: 0 15px;
         width: 90%;
-        font-size: 13px;
+        font-size: 12px;
         padding: 5px 0;
     }
 
@@ -1148,6 +1181,31 @@ a.btn:visited {
     }
     
     .nav-links ul a:visited {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    p.mobile-only {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    p.mobile-only a:link {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    p.mobile-only a:hover {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    p.mobile-only a:active {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    
+    p.mobile-only a:visited {
         color: whitesmoke;
         text-decoration: none;
     }
