@@ -893,7 +893,7 @@ a.btn:visited {
     .nav-bar .open-menu {
         position: absolute;
         right: 75px;
-        top: 67.5px;
+        top: 62.5px;
         cursor: pointer;
         font-size: 14px;
         font-family: cMI, monospace;
@@ -908,7 +908,7 @@ a.btn:visited {
         right: -100%;
         position: fixed;
         padding-right: 75px;
-        padding-top: 67.5px;
+        padding-top: 62.5px;
         text-align: right;
         z-index: 2;
         transition: 0.5s;
