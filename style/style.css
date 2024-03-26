@@ -93,7 +93,6 @@ ul, ol {
 a:link {
     color: #e05b5b;
     text-decoration: none;
-    background: transparent;
 }
 
 a:hover {
@@ -405,14 +404,23 @@ meter {
 }
 
 button {
-    background-color: #e05b5b;
-    border: 2px solid whitesmoke;
+    background-color: inherit;
+    border: 2px solid #e05b5b;
     padding: 5px 15px;
     margin: 0 10px 10px 0;
     color: whitesmoke;
     cursor: pointer;
     font-size: 14px;
     font-family: cM, monospace;
+    color: #e05b5b;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #e05b5b;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    transition: 0.5s;
 }
 
 a.btn {
@@ -515,6 +523,7 @@ a.btn:visited {
         text-decoration: none;
         padding: 5px 10px;
         border: 2px solid #e05b5b;
+        transition: 0.5s;
      }
 
     .nav-links ul li a:hover {
@@ -711,6 +720,7 @@ a.btn:visited {
         text-decoration: none;
         padding: 5px 10px;
         border: 2px solid #e05b5b;
+        transition: 0.5s;
      }
 
     .nav-links ul li a:hover {
@@ -1060,9 +1070,7 @@ a.btn:visited {
     
     .general h1 {
         font-size: 13px;
-        padding: 6px 30px;
-        font-family: cM, monospace;
-        vertical-align: middle;
+        padding: 0 30px;
     }
 
 }
