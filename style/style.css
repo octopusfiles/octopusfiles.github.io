@@ -449,8 +449,13 @@ a.btn:visited {
 .row-two {
     display: flex;
     flex-direction: row;
-    width:220px;
-    
+    width:220px;   
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 15px 0;
 }
 
 @media screen and (min-width:1650px) {
