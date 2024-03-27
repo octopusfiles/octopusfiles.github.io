@@ -452,7 +452,7 @@ a.btn:visited {
     width:220px;   
 }
 
-img {
+.images img {
     width: 100%;
     height: auto;
     margin: 0 0 15px 0;
